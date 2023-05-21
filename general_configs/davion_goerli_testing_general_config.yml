@@ -9,7 +9,7 @@ max_funding_rate: '2237'
 orders_tree_height: 64
 positions_tree_height: 64
 synthetic_assets_info:
-  '0x31303030504550452d330000000000'
+  '0x31303030504550452d330000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
     - '0x313030305045504555534400000000004d616b6572'
