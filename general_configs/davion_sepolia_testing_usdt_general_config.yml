@@ -1,6 +1,6 @@
 collateral_asset_info:
   # test usdt contract on geth 0x4349c35FDE840cd6531A9Fe3d92713b946d8E232, decimal 6
-  asset_id: '0x030a0ea4d2c6f993c7cafada8a44cbcc39876d96c125bf3efdb27aa47401dc9a' 
+  asset_id: '0x865c0a11733accbe23fc9a77d1f44faf86091a3cf7ae4cd8e848ddd2d5cc7f' 
   resolution: '0xf4240'
 data_availability_mode: 0
 fee_position_info:
