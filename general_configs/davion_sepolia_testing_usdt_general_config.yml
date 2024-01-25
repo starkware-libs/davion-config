@@ -732,7 +732,7 @@ synthetic_assets_info:
           upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
                                                           # tier. Equals 2^128^-1
 
-'0x4d414e54412d360000000000000000': # MANTA price 3 resolution 0xf4240
+  '0x4d414e54412d360000000000000000': # MANTA price 3 resolution 0xf4240
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
     - '0x4d414e544155534454000000000000000041706578' #  MANTAUSDT Apex

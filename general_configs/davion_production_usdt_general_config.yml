@@ -346,7 +346,7 @@ synthetic_assets_info:
         - risk: '1417339208' # 0.33 * 2 ** 32 = 1417339207.68 _>1417339208
           upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
                                                           # tier. Equals 2^128^-1
-    '0x444f542d3600000000000000000000': # DOT price 6 resolution 0xf4240
+  '0x444f542d3600000000000000000000': # DOT price 6 resolution 0xf4240
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
     - '0x444f54555344540000000000000000000041706578' #  DOTUSDT Apex
@@ -817,7 +817,7 @@ synthetic_assets_info:
           upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
                                                           # tier. Equals 2^128^-1  
 
-'0x4d414e54412d360000000000000000': # MANTA price 3 resolution 0xf4240
+  '0x4d414e54412d360000000000000000': # MANTA price 3 resolution 0xf4240
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
     - '0x4d414e544155534454000000000000000041706578' #  MANTAUSDT Apex
