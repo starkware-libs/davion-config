@@ -6,6 +6,7 @@ fee_position_info:
   position_id: '10240000'
   public_key: '0x02382ceace17a59ec674b5ca7109eabc66e4107c7f473492cf192c60f4e17600'
 max_funding_rate: '2237'
+is_risk_by_balance_only: false # upper_bound is price⋅asset_quantity
 orders_tree_height: 64
 positions_tree_height: 64
 synthetic_assets_info:
@@ -26,7 +27,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x3e8'
-    risk_factor: '171798692'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '171798692' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x31494e43482d350000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -44,7 +49,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4144412d3500000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -62,7 +71,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x414c474f2d35000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -80,7 +93,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4150452d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -98,7 +115,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4150542d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -116,7 +137,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4152422d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -134,7 +159,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x41544f4d2d37000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -152,7 +181,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x415641582d37000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -170,7 +203,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4158532d3700000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -188,7 +225,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4243482d3800000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -206,7 +247,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x5f5e100'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x424c55522d35000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -224,7 +269,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x424e422d3800000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -242,7 +291,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x5f5e100'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4254432d3130000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -260,7 +313,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x2540be400'
-    risk_factor: '128849019'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '128849019' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x43485a2d3500000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -278,7 +335,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4352562d3500000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -314,7 +375,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x444f542d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -332,7 +397,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x445944582d36000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -350,7 +419,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x454e4a2d3500000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -368,7 +441,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4554432d3700000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -386,7 +463,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4554482d3800000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -404,7 +485,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x5f5e100'
-    risk_factor: '128849019'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '128849019' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x46494c2d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -422,7 +507,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x47414c412d34000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -440,7 +529,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x2710'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x474d542d3500000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -458,7 +551,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x474d582d3700000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -476,7 +573,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4c444f2d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -494,7 +595,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4c42522d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -512,7 +617,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '171798692'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '171798692' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
 
   '0x4c494e4b2d37000000000000000000':
     oracle_price_quorum: '0x3'
@@ -531,7 +640,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4c54432d3700000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -549,7 +662,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4d415449432d360000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -567,7 +684,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4e4541522d36000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -585,7 +706,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x4f502d360000000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -603,7 +728,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x53414e442d35000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -621,7 +750,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x186a0'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x534f4c2d3700000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -639,7 +772,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0x989680'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x53555348492d360000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -657,7 +794,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x5449412d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -675,7 +816,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '171798692'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '171798692' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x544f4e2d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -693,7 +838,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '171798692'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '171798692' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x554e492d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -711,7 +860,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x574c442d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -729,7 +882,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '171798692'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '171798692' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
   '0x5852502d3600000000000000000000':
     oracle_price_quorum: '0x3'
     oracle_price_signed_asset_ids:
@@ -747,7 +904,11 @@ synthetic_assets_info:
     - '0x63f0f8507cc674ff668985a1ea854d3b73835a8181bfbb4564ae422bf68a2c0'
     - '0x41dbe627aeab66504b837b3abd88ae2f58ba6d98ee7bbd7f226c4684d9e6225'
     resolution: '0xf4240'
-    risk_factor: '214748365'
+    risk_factor:
+      segments: # first all the same tie and we will update it the final tie
+        - risk: '214748365' 
+          upper_bound: 340282366920938463463374607431768211455 # The upper bound of the final
+                                                          # tier. Equals 2^128^-1
 timestamp_validation_config:
   funding_validity_period: 86400
   price_validity_period: 86400
